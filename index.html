@@ -5,342 +5,435 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="test.css">
+
     <!-- Bootstrap 5.3.8 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="test/test.css">
-    <title>Document</title>
+
+    <title>Mallard Duck</title>
 </head>
 
 
 
-<body>
-    <div class="container">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
 
-        <h1>Mallard Duck</h1>
-        <p><strong>Inspired by:</strong>
-            <a href="https://www.youtube.com/watch?v=cQfo0HJhCnE" target="_blank">Migration Movie Trailer</a>
-        </p>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/hWbfohXIdEU?si=z3wqnLrk_kwS3ssr"
-                title="YouTube video player" frameborder="0" allow="accelerometer; 
-            autoplay; 
-            clipboard-write; 
-            encrypted-media; 
-            gyroscope; 
-            picture-in-picture; 
-            web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
+    <!-- NAVBAR -->
 
-            <div class="info">
-                <h2>Basic Information</h2>
-                <img src="media/mallard-ducks.jpg" alt="Mallard Duck">
-                <ul>
-                    <li><strong>Common Name:</strong> Mallard Duck</li>
-                    <li><strong>Scientific Name:</strong> Anas platyrhynchos</li>
-                    <li><strong>Type:</strong> Bird</li>
-                    <li><strong>Diet:</strong> Omnivore</li>
-                    <li><strong>Group Name:</strong> Sord (in flight)</li>
-                    <li><strong>Life Span (Wild):</strong> 5–10 years</li>
-                    <li><strong>Life Span (Captivity):</strong> Up to 10 years</li>
-                    <li><strong>Size:</strong> 20–26 inches</li>
-                    <li><strong>Weight:</strong> 2–3 pounds</li>
-                </ul>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h2>Mallard Duck</h2>
+            </a>
+            <div class="nav justify-content-end">
+                <a class="nav-link" href="#inspired">Inspired</a>
+                <a class="nav-link" href="#overview">Overview</a>
+                <a class="nav-link" href="#pairing">Pairing</a>
+                <a class="nav-link" href="#migration">Migration</a>
+                <a class="nav-link" href="#breeding">Breeding</a>
+                <a class="nav-link" href="#post-breeding">Post-Breeding</a>
+                <a class="nav-link" href="#summary">Summary</a>
             </div>
+        </div>
+    </nav>
 
-            <h2>Overview</h2>
+    <!-- -->
 
-            <p>
-                In the space of one year a duck experiences the full spectrum of seasonal changes that usher in
-                opportunities and
-                challenges. Follow the annual life cycle diagram from breeding to wintering for a better understanding
-                of the activities and energy requirements in different phases of a duck's annual cycle.
-            </p>
 
-            <h2>Pair Formation</h2>
+    <!-- INSPIRED -->
+    <div id="inspired" class="card-body bg-dark text-light p-4 mb-5 ">
+        <!-- HERO -->
+        <section class="bg-dark text-center py-5">
+            <div class="container">
+                <h1 class="display-6 fw-bold">The Annual Cycle of the Mallard Duck</h1>
+                <p class="lead">Follow the journal from breeding to seasons migration for a better
+                    understanding of the activities and energy requirements in different phases of a duck's annual
+                    cycle.</p>
 
-            <p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hWbfohXIdEU?si=z3wqnLrk_kwS3ssr"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; 
+                        autoplay; clipboard-write; encrypted-media; gyroscope; 
+                        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+
+                    <p>Inspired by: <a href="https://www.youtube.com/watch?v=cQfo0HJhCnE" target="_blank">Migration
+                            Movie Trailer</a></p>
+                </div>
+        </section>
+    </div>
+
+    <!-- OVERVIEW -->
+    <div id="overview" class="container py-4 card p-4 mb-5 mt-5">
+        <div class="row g-2">
+            <div class="col-md-4">
+                <div class="p-3"><img src="media/mallard-ducks.jpg" alt="Mallard Duck" class="img-fluid"></div>
+            </div>
+            <div class="col-md-8">
+                <div class="p-3">
+                    <h2>Overview</h2>
+                    <p>
+                        In the space of one year a duck experiences the full spectrum of seasonal changes that usher in
+                        opportunities and challenges. Follow the annual life cycle diagram from breeding to wintering
+                        for a better understanding of the activities and energy requirements in different phases of a
+                        duck's annual cycle.
+                    </p>
+                    <ul>
+                        <li><strong>Common Name:</strong> Mallard Duck</li>
+                        <li><strong>Scientific Name:</strong> Anas platyrhynchos</li>
+                        <li><strong>Type:</strong> Bird</li>
+                        <li><strong>Diet:</strong> Omnivore</li>
+                        <li><strong>Group Name:</strong> Sord (in flight)</li>
+                        <li><strong>Life Span (Wild):</strong> 5-10 years</li>
+                        <li><strong>Life Span (Captivity):</strong> Up to 10 years</li>
+                        <li><strong>Size:</strong> 20-26 inches</li>
+                        <li><strong>Weight:</strong> 2-3 pounds</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAIRING -->
+
+    <div id="pairing" class="card-body">
+        <section id="pairing" class="container py-5 bg-dark text-light p-4 mb-5 rounded">
+            <h2>Pairing Information</h2>
             <figure>
                 <img src="media/mallard-pair.jpeg" alt="Mallard courtship flight">
                 <figcaption>Fig.1 - Mallard courtship flight. illustration by Katie Tucker, DU.
                     <a href="https://nationalgeographic.com" target="_blank">National Geographic</a>
                 </figcaption>
             </figure>
+            <div class="accordion mb-3" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#time">How
+                            long
+                            do mallards stay with their partners?</button>
+                    </h2>
+                    <div id="time" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p>Mallards, like most North American ducks, do not mate for life. Rather, they form
+                                new
+                                pair bonds annually, which typically last for 6-8 months.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <p>Mallards, like most North American ducks, do not mate for life. Rather, they form new pair bonds
-                annually, which typically last for 6–8 months.</p>
-            <P>Mallards begin courting and selecting mates during fall and early winter, typically before most other
-                species of ducks. Adult males pair earlier, as they have more experience performing courtship displays
-                and are more dominant to younger males. From the perspective of a male duck, pairing early is especially
-                important, because there are more males than females in the population. If a male mallard doesn’t find a
-                mate early, they are at risk of not finding one at all.</P>
+            <div class="accordion mb-3" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#courtship">When
+                            do mallards form pair bonds?</button>
+                    </h2>
+                    <div id="courtship" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <P>Mallards begin courting and selecting mates during fall and early winter,
+                                typically
+                                before most other species of ducks. Adult males pair earlier, as they have more
+                                experience performing courtship displays and are more dominant to younger males.
+                                From the perspective of a
+                                male duck, pairing early is especially important, because there are more males
+                                than
+                                females in the population. If a male mallard doesn't find a mate early, they are
+                                at
+                                risk of not finding one at all.
+                            </P>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <p>Early pairing is beneficial to female mallards because the protection and dominance shown by her mate
-                means better access to high quality feeding sites, protection from harassment by unpaired males, and
-                vigilance against
-                predators. Ultimately this may also lead to earlier migration and nesting in the spring, which increases
-                the odds
-                of successfully producing more ducks.
+            <div class="accordion mb-3" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#matter">How
+                            early pairing matters to the migration?</button>
+                    </h2>
+                    <div id="matter" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p>Early pairing is beneficial to female mallards because the protection and
+                                dominance
+                                shown by her mate means better access to high quality feeding sites, protection
+                                from
+                                harassment by unpaired males, and vigilance against predators. Ultimately this
+                                may
+                                also lead to earlier migration and nesting in the spring, which increases the
+                                odds
+                                of successfully producing more ducks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- BREEDING -->
+
+    <!-- TONGGLE -->
+    <section id="breeding"
+        class="container d-grid justify-content-center py-5 bg-light text-dark p-4 mb-5 rounded custom-bg-section">
+        <h2 class="text-light">Breeding and Brood Rearing</h2>
+
+        <button class="btn btn-primary m-2" data-bs-toggle="collapse" data-bs-target="#prepare">Prepare</button>
+        <div id="prepare" class="collapse">
+            <img class="card-img-top" src="media/mallard-pair.jpeg" alt="Pair of mallards">
+            <p class="card-text p-3 bg-secondary text-light d-flex justify-content-center">
+                The greatest concentrations of breeding mallards are found in the Prairie Pothole
+                Region of the U.S. and Canada, including South Dakota, North Dakota, Montana, Manitoba,
+                Saskatchewan, and Alberta. Mallards also breed in large numbers across the Boreal Forest of
+                western Canada, diverse landscapes of eastern Canada, and tundra and river deltas of Alaska.
+                Breeding mallards are commonly found within the Great Lakes states, Northeastern U.S.,
+                Central Valley of California, and other local landscapes across that providesuitable nesting
+                and brood-rearing habitat.</p>
+        </div>
+
+        <button class="btn btn-primary m-2" data-bs-toggle="collapse" data-bs-target="#nest">Nesting</button>
+        <div id="nest" class="collapse">
+            <img class="card-img-top justify-image-center" src="media/mallard-nest.jpeg" alt="Pair of mallards">
+            <p class="card-text p-3  bg-secondary text-light d-flex justify-content-center">
+                Nests are typically built in upland vegetation where the female's brown, mottled plumage conceals her
+                from predators. The nest is made from grasses or other plants and lined with fluffy down feathers in a
+                bowl-shaped indentation in the ground. The female typically lays 8-13 whitish to greenish eggs at a rate
+                of 1 per day. The pair bond weakens as the female progresses through incubation. Females perform all
+                incubation and brood-rearing activities. Males typically leave the female mid-incubation but remain
+                nearby seeking additional breeding opportunities with other females that may have lost a nest or brood
+                to predators.
             </p>
+        </div>
 
+        <button class="btn btn-primary m-2" data-bs-toggle="collapse" data-bs-target="#duckling">Ducklings</button>
+        <div id="duckling" class="collapse">
+            <img class="card-img-top justify-image-center" src="media/mallard-ducklings.jpeg" alt="Pair of mallards">
+            <p class="card-text p-3 bg-secondary text-light d-flex justify-content-center">
+                Incubation lasts 26-30 days, after which the eggs hatch in relative synchrony. Being precocial,
+                ducklings can walk, swim, and eat on their own as soon as they depart the nest. Less than 24 hours after
+                the last egg has hatched, the female leads her brood to a nearby wetland where they begin feeding on
+                invertebrates on or near the water surface. Females may provide protection from inclement weather while
+                ducklings are small, but soon enough they are able to survive independent of female care. The female's
+                role becomes one related to warning about predators or leading the ducklings to new areas with abundant
+                food. As they age, they soon begin feeding in the tip-up fashion common among puddle ducks. The female
+                stays with the ducklings for about 45 to 60 days, at which time the ducklings are able to fly and escape
+                predators on their own.
+                <br>
+                During the brood-rearing phase, ducklings require large amounts of protein-rich foods, mostly aquatic
+                invertebrates, to fuel the rapid growth of body tissue, muscle, and feathers.
+            </p>
+        </div>
 
-            <h2>Fall Migration</h2>
-
-            <figure>
-                <img src="media/mallard-fall.jpeg" alt="Flock of mallards during fall migration">
-                <figcaption>Fig.2 - Flock of mallards during fall migration. Illustration by Katie Tucker, DU.
-                </figcaption>
-            </figure>
-
-            <p> During fall, mallards begin migrating out of their northern breeding grounds, destined for more
-                southerly locations where they will eventually spend the cold winter months. While some mallards begin
-                migrating as early as
-                October, many will delay major migratory movements until later. The mallard is one of the more
-                cold-tolerant
-                species of dabbling ducks in North America, allowing it to remain in northern areas until extreme winter
-                weather
-                eventually triggers their migration.</p>
-
-            <p>
-                Mallards typically begin migration when they begin to lose access to food, such as when it becomes
-                buried in snow or wetlands begin to freeze. In areas where the weather does not get cold enough to cause
-                mallards to seek a warmer climate, they may migrate a shorter distance or not at all.</p>
-
-
-            <h2>Winter</h2>
-
-            <figure>
-                <img src="media/mallard-winter.jpeg" alt="Mallard drake in winter">
-                <figcaption>Fig.4 - Mallard drake in winter. Illustration by Katie Tucker, DU.
-                </figcaption>
-            </figure>
-
-            <p>During the winter, mallards mainly split their time between resting and feeding, seeking out foods rich
-                in
-                carbohydrates, such as seeds and grains. Females go through a prealternate molt during winter, whereby
-                they
-                grow feathers associated with breeding. This requires addition of protein-rich invertebrates to their
-                diet to
-                support feather growth. Pairs continue to strengthen their bonds during winter, as males try to prevent
-                their mate
-                from being taken by an unpaired male. Pair bonds remain intact through spring migration and arrival on
-                their
-                breeding grounds.</p>
-
-            <h2>Spring Migration</h2>
-
-            <figure>
-                <img src="media/mallard-spring.jpg" alt="Mallard pair in spring">
-                <figcaption>Fig.5 - Mallard pair in spring. Illustration by Katie Tucker, DU.
-                </figcaption>
-            </figure>
-
-            <p>As days gets longer and temperatures warm during late winter and early spring, mallards begin migrating
-                from
-                their southern wintering areas into the northern breeding grounds of Canada and northern United States.
-                Birds that
-                arrive earliest on the breeding grounds choose the preferred nesting sites, and earlier arrival also
-                provides more
-                time for renesting if early nest attempts are destroyed by predators. Like fall migration, the timing
-                and pace of
-                spring migration may be altered by weather conditions. For example, cold weather that keeps northern
-                wetlands
-                frozen into spring will delay migration, while unusually warm weather may cause an earlier or faster
-                migration.</p>
-
-            <p> Female mallards typically return to nest in areas where they have prior experience, either where they
-                were
-                hatched or where they successfully raised a brood in previous years. This is known as “philopatry,” and
-                it is
-                believed to improve survival and breeding success because the ducks are already familiar with the
-                habitats of that location.</p>
-
-
-            <h2>Breeding</h2>
-
-            <figure>
-                <img src="media/mallard-pair.jpeg" alt="Mallard pair in breeding season">
-                <figcaption>Fig.7 - Mallard pair in breeding season. Illustration by Katie Tucker, DU.
-                </figcaption>
-            </figure>
-
-            <p>The greatest concentrations of breeding mallards are found in the Prairie Pothole Region of the U.S. and
-                Canada, including South Dakota, North Dakota, Montana, Manitoba, Saskatchewan, and Alberta. Mallards
-                also breed in
-                large numbers across the Boreal Forest of western Canada, diverse landscapes of eastern Canada, and
-                tundra and
-                river deltas of Alaska. Breeding mallards are commonly found within the Great Lakes states, Northeastern
-                U.S.,
-                Central Valley of California, and other local landscapes across that provide suitable nesting and
-                brood-rearing
-                habitat.</p>
-
-
-            <figure>
-                <img src="media/mallard-nest.jpeg" alt="Mallard nest">
-                <figcaption>Fig.8 - Mallard nest. Illustration by Katie Tucker, DU.
-                </figcaption>
-            </figure>
-
-            <p>Nests are typically built in upland vegetation where the female’s brown, mottled plumage conceals her
-                from
-                predators. The nest is made from grasses or other plants and lined with fluffy down feathers in a
-                bowl-shaped indentation in the ground. The female typically lays 8–13 whitish to greenish eggs at a rate
-                of 1 per day.
-                The pair bond weakens as the female progresses through incubation. Females perform all incubation and
-                brood-rearing
-                activities. Males typically leave the female mid-incubation but remain nearby seeking additional
-                breeding
-                opportunities with other females that may have lost a nest or brood to predators.</p>
-
-
-            <figure>
-                <img src="media/mallard-ducklings.jpeg" alt="Mallard ducklings">
-                <figcaption>Fig.9 - Mallard ducklings. Illustration by Katie Tucker, DU.
-                </figcaption>
-            </figure>
-
-            <p>Incubation lasts 26–30 days, after which the eggs hatch in relative synchrony. Being precocial, ducklings
-                can walk, swim, and eat on their own as soon as they depart the nest. Less than 24 hours after the last
-                egg has
-                hatched, the female leads her brood to a nearby wetland where they begin feeding on invertebrates on or
-                near the water
-                surface. Females may provide protection from inclement weather while ducklings are small, but soon
-                enough they are
-                able to survive independent of female care. The female’s role becomes one related to warning about
-                predators or
-                leading the ducklings to new areas with abundant food. As they age, they soon begin feeding in the
-                tip-up fashion common
-                among puddle ducks. The female stays with the ducklings for about 45 to 60 days, at which time the
-                ducklings are
-                able to fly and escape predators on their own.</p>
-
-            <p>During the brood-rearing phase, ducklings require large amounts of protein-rich foods, mostly aquatic
-                invertebrates, to fuel the rapid growth of body tissue, muscle, and feathers.</p>
-
-
-            <h2>Post-Breeding</h2>
-
-            <figure>
-                <img src="media/mallard-postbreeding.jpeg" alt="Molting mallard">
-                <figcaption>Fig.10 - Molting mallard. Illustration by Katie Tucker, DU.
-                </figcaption>
-            </figure>
-
-            <p>Once breeding is complete, both male and female mallards must complete prebasic molt, the process by
-                which
-                they replace their entire plumage with a new set of feathers. During the prebasic molt, mallards replace
-                all
-                their flight feathers, making them flightless for 30–45 days. Lacking the ability to fly, this is a time
-                of great risk,
-                which is why mallards seek out wetlands with reliable water and dense vegetation in which they can hide
-                from
-                predators. Mallards often fly long distances after breeding to traditional “molting wetlands,” which
-                sometimes can
-                support tens of thousands of flightless ducks during late summer.</p>
-
-            <p>For males, prebasic molt is a time of dramatic change as they replace their ornate breeding plumage with
+        <button class="btn btn-primary m-2" data-bs-toggle="collapse"
+            data-bs-target="#postbreeding">Post-Breeding</button>
+        <div id="postbreeding" class="collapse">
+            <img class="card-img-top justify-image-center" src="media/mallard-postbreeding.jpeg" alt="Pair of mallards">
+            <p class="card-text p-3  bg-secondary text-light d-flex justify-content-center">
+                Once breeding is complete, both male and female mallards must complete prebasic molt, the process by
+                which they replace their entire plumage with a new set of feathers. During the prebasic molt, mallards
+                replace all their flight feathers, making them flightless for 30–45 days. Lacking the ability to fly,
+                this is a time of great risk, which is why mallards seek out wetlands with reliable water and dense
+                vegetation in which they can hide from predators. Mallards often fly long distances after breeding to
+                traditional “molting wetlands,” which sometimes can support tens of thousands of flightless ducks during
+                late summer.
+                <br>
+                For males, prebasic molt is a time of dramatic change as they replace their ornate breeding plumage with
                 drab body plumage. For a short time, male mallards lose the iconic green head feathers, causing them to
-                look like a
-                female mallard except for some masculine features, like a yellow, black-tipped bill.</p>
-
-            <p>Juvenile male mallards (ducklings) go through juvenile molt, losing their downy appearance and gaining
+                look like a female mallard except for some masculine features, like a yellow, black-tipped bill.
+                <br>
+                Juvenile male mallards (ducklings) go through juvenile molt, losing their downy appearance and gaining
                 feathers that look more like those of female mallards, and then another molt that may last into fall
-                migration where they
-                obtain the familiar green head plumage. Females also replace their entire breeding season plumage, but
-                the change
-                in color pattern is not as drastic for them.</p>
+                migration where they obtain the familiar green head plumage. Females also replace their entire breeding
+                season plumage, but the change in color pattern is not as drastic for them.
+                <br>
+                Males retain their drab, basic plumage for only a short period of time, as they enter their
+                pre-alternate molt during fall while preparing to migrate southward. The prealternate molt is the
+                process through which they obtain their ornate breeding plumage, which they use to help attract a female
+                mate and form a pair bond as early as October or November.
+                <br>
+                Molt is energetically expensive. During prebasic molt, mallards need proteins to rebuild feathers, but
+                they also require energy-rich seeds and other foods to begin putting on fat that will eventually fuel
+                their southward migration.
+            </p>
+        </div>
+    </section>
 
-            <p>Males retain their drab, basic plumage for only a short period of time, as they enter their pre-alternate
-                molt during fall while preparing to migrate southward. The prealternate molt is the process through
-                which they
-                obtain their ornate breeding plumage, which they use to help attract a female mate and form a pair bond
-                as early as
-                October or November.</p>
+    <!-- MIGRATION -->
+    <section id="migration" class="container bg-dark text-light p-4 mb-5 rounded custom-bg-section">
+        <h2 class="text-light ">Migration</h2>
 
-            <p>Molt is energetically expensive. During prebasic molt, mallards need proteins to rebuild feathers,
-                but they
-                also require energy-rich seeds and other foods to begin putting on fat that will eventually fuel their
-                southward
-                migration.</p>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="p-3 border bg-light text-dark rounded">
+                    <h4>Fall migration</h4>
+                    <figure class="mt-3">
+                        <img src="media/mallard-fall.jpeg" alt="Flock of mallards during fall migration">
+                        <figcaption class="pd-2">Fig.2 - Flock of mallards during fall migration. Illustration by Katie
+                            Tucker, DU.</figcaption>
+                    </figure>
+                    <p>
+                        Mallards typically begin migration when they begin to lose access to food, such as when it
+                        becomes buried in snow or wetlands begin to freeze. In areas where the weather does not get cold
+                        enough to cause mallards to seek a warmer climate, they may migrate a shorter distance or not at
+                        all.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-3 border bg-light text-dark rounded">
+                    <h4>Winter migration</h4>
+                    <figure>
+                        <img src="media/mallard-winter.jpeg" alt="Mallard drake in winter">
+                        <figcaption>Fig.4 - Mallard drake in winter. Illustration by Katie Tucker, DU.
+                        </figcaption>
+                    </figure>
+                    <p>During the winter, mallards mainly split their time between resting and feeding, seeking out
+                        foods rich in carbohydrates, such as seeds and grains. Females go through a prealternate molt
+                        during winter,
+                        whereby they grow feathers associated with breeding. This requires addition of protein-rich
+                        invertebrates to
+                        their diet to support feather growth. Pairs continue to strengthen their bonds during winter, as
+                        males try to
+                        prevent their mate from being taken by an unpaired male. Pair bonds remain intact through spring
+                        migration and arrival
+                        on their breeding grounds.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-3 border bg-light text-dark rounded">
+                    <h4>Spring migration</h4>
+                    <figure class="mt-3">
+                        <img src="media/mallard-spring.jpg" alt="Mallard pair in spring">
+                        <figcaption class="pd-2">Fig.5 - Mallard pair in spring. Illustration by Katie Tucker, DU.
+                        </figcaption>
+                    </figure>
+                    <p>As days gets longer and temperatures warm during late winter and early spring, mallards begin
+                        migrating from their southern wintering areas into the northern breeding grounds of Canada and
+                        northern United States. Birds that arrive earliest on the breeding grounds choose the preferred
+                        nesting sites, and earlier arrival also provides more time for renesting if early nest attempts
+                        are destroyed by predators. Like fall migration, the timing and pace of spring migration may be
+                        altered by weather conditions. For example, cold weather that keeps northern wetlands frozen
+                        into spring will delay migration, while unusually warm weather may cause an earlier or faster
+                        migration.</p>
+                    <p> Female mallards typically return to nest in areas where they have prior experience, either where
+                        they were hatched or where they successfully raised a brood in previous years. This is known as
+                        “philopatry,” and it is believed to improve survival and breeding success because the ducks are
+                        already familiar with the habitats of that location.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUMMARY -->
+    <section class="container ">
+        <h1>Summary</h1>
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Fall Migration (Southward)</th>
+                    <th scope="col">Spring Migration (Northward)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Timing</th>
+                    <td>Triggers include falling temperatures, freezing wetlands, and decreasing daylight,
+                        prompting
+                        birds to leave Canada and Alaska.</td>
+                    <td>Returns to northern breeding grounds typically begin in January and February, driven
+                        more by
+                        increasing daylight (photoperiod) than immediate weather, extending into April.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Behaviour</th>
+                    <td>Known as dabbling ducks, they often move in large, nocturnal flocks to feed on
+                        carbohydrates
+                        in agricultural fields and wetlands.</td>
+                    <td>Pairs form during winter, and females often return to the same breeding site where they
+                        were
+                        born, accompanied by the male. </td>
+                </tr>
+                <tr>
+                    <th scope="row">Distance</th>
+                    <td>While some migrate short distances, others may travel over 875 miles in less than a
+                        month.
+                    </td>
+                    <td>na</td>
+                </tr>
+                <tr>
+                    <th scope="row">Location</th>
+                    <td>They use all four major North American flyways, with significant numbers using the
+                        Mississippi and Central Flyways. </td>
+                    <td>na</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <h3>Key Behavioral Aspects</h3>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Cold Tolerance</th>
+                    <td>Mallards are hardy and will delay migration until severe weather freezes their habitat,
+                        allowing them to shorten their journey.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Adaptability</th>
+                    <td>Many populations have become permanent residents in urban or warm areas, bypassing
+                        migration entirely.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Nocturnal Movement</th>
+                    <td>Migration often occurs at night, with massive changes in local populations happening
+                        overnight.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <h2>Reference:</h2>
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Mallard" target="_blank">Mallard - Wikipedia</a></li>
+        <li><a href="https://www.fws.gov/species/mallard-anas-platyrhynchos" target="_blank">Mallard - U.S.
+                Fish and Wildlife Service</a></li>
+        <li><a href="https://kids.nationalgeographic.com/animals/birds/facts/mallard-duck" target="_blank">Mallard
+                Duck - National Geographic Kids</a></li>
+        <li><a href="https://www.ducks.org/conservation/waterfowl-research-science/mallard-annual-life-cycle"
+                target="_blank">Mallard Annual Life Cycle - Ducks Unlimited</a></li>
+        <li><a href="https://www.audubon.org/field-guide/bird/mallard?int_src=site_search&int_query=Mallard"
+                target="_blank">Mallard - Audubon Society</a></li>
+    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
-            <h1>Summary</h1>
+    <!-- JS -->
+    <script>
+        $('.btn-next').on('click', function (e) {
+            e.preventDefault();
+            $('#prepare').tab('show');
+        });
 
-            <table class="table">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col">Fall Migration (Southward)</th>
-                        <th scope="col">Spring Migration (Northward)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Timing</th>
-                        <td>Triggers include falling temperatures, freezing wetlands, and decreasing daylight, prompting
-                            birds to leave Canada and Alaska.</td>
-                        <td>Returns to northern breeding grounds typically begin in January and February, driven more by
-                            increasing daylight (photoperiod) than immediate weather, extending into April.</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Behaviour</th>
-                        <td>Known as dabbling ducks, they often move in large, nocturnal flocks to feed on carbohydrates
-                            in agricultural fields and wetlands.</td>
-                        <td>Pairs form during winter, and females often return to the same breeding site where they were
-                            born, accompanied by the male. </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Distance</th>
-                        <td>While some migrate short distances, others may travel over 875 miles in less than a month.
-                        </td>
-                        <td>na</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Location</th>
-                        <td>They use all four major North American flyways, with significant numbers using the
-                            Mississippi and Central Flyways. </td>
-                        <td>na</td>
-                    </tr>
-                </tbody>
-            </table>
+    </script>
 
-            <br>
-
-            <table class="table">
-                <thead class="thead-dark">
-                    <tr>
-                        <h3>Key Behavioral Aspects</h3>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Cold Tolerance</th>
-                        <td>Mallards are hardy and will delay migration until severe weather freezes their habitat,
-                            allowing them to shorten their journey.</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Adaptability</th>
-                        <td>Many populations have become permanent residents in urban or warm areas, bypassing migration entirely.</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Nocturnal Movement</th>
-                        <td>Migration often occurs at night, with massive changes in local populations happening overnight.</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h2>Reference:</h2>
-            <ul>
-                <li><a href="https://en.wikipedia.org/wiki/Mallard" target="_blank">Mallard - Wikipedia</a></li>
-                <li><a href="https://www.fws.gov/species/mallard-anas-platyrhynchos" target="_blank">Mallard - U.S. Fish and Wildlife Service</a></li>
-                <li><a href="https://kids.nationalgeographic.com/animals/birds/facts/mallard-duck" target="_blank">Mallard Duck - National Geographic Kids</a></li>
-                <li><a href="https://www.ducks.org/conservation/waterfowl-research-science/mallard-annual-life-cycle" target="_blank">Mallard Annual Life Cycle - Ducks Unlimited</a></li>
-                <li><a href="https://www.audubon.org/field-guide/bird/mallard?int_src=site_search&int_query=Mallard" target="_blank">Mallard - Audubon Society</a></li>
-            </ul>
-
+    <!-- tabs   -->
+    <script>
+        // Select the tab trigger element by its ID or href
+        const tabTriggerEl = document.querySelector('#prepare');
+        const tab = new bootstrap.Tab(tabTriggerEl);
+        tab.show(); // Activates Tab 2
+    </script>
 </body>
 
 </html>
