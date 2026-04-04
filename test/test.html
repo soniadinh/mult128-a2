@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Demo</title>
+
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="test/test.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bootstrap Demo</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="#layout">Layout</a>
+                <a class="nav-link" href="#typography">Typography</a>
+                <a class="nav-link" href="#components">Components</a>
+                <a class="nav-link" href="#interactive">Interactive</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="bg-light text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Bootstrap Demo</h1>
+            <p class="lead">Each section demonstrates Bootstrap features while explaining them.</p>
+        </div>
+    </section>
+
+    <!-- LAYOUT SECTION -->
+    <section id="layout" class="container py-5">
+        <h2>Layout: Containers, Grid, Flex</h2>
+        <p class="mb-4">Use <code>.container</code> for centered layouts. Use <code>.row</code> and <code>.col</code>
+            for grids.</p>
+
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="p-3 border bg-light">col-md-4</div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 border bg-light">col-md-4</div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 border bg-light">col-md-4</div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between mt-4">
+            <div class="p-2 bg-primary text-white">Flex 1</div>
+            <div class="p-2 bg-secondary text-white">Flex 2</div>
+        </div>
+    </section>
+
+    <!-- TYPOGRAPHY -->
+    <section id="typography" class="container py-5">
+        <h2>Typography</h2>
+        <h1 class="display-1">Display 1</h1>
+        <p class="lead">Lead paragraph stands out.</p>
+        <p class="fw-bold">Bold text</p>
+        <p class="fst-italic">Italic text</p>
+        <p class="lh-lg">Line height example for readability.</p>
+        <p class="text-center text-decoration-underline">Centered and underlined</p>
+    </section>
+
+    <!-- IMAGES + UTILITIES -->
+    <section class="container py-5">
+        <h2>Images, Borders, Shadows</h2>
+        <img src="https://via.placeholder.com/300" class="img-fluid rounded shadow mb-3" alt="demo">
+        <p class="border rounded p-3 shadow-sm">Borders, rounded edges, and shadows</p>
+    </section>
+
+    <!-- COMPONENTS -->
+    <section id="components" class="container py-5">
+        <h2>Components</h2>
+
+        <button class="btn btn-primary mb-3">Button</button>
+
+        <ul class="nav nav-tabs mb-3">
+            <li class="nav-item"><a class="nav-link active" href="#">Tab 1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tab 2</a></li>
+        </ul>
+
+        <div class="card mb-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Card</h5>
+                <p class="card-text">Cards group content.</p>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+            </ul>
+        </nav>
+
+        <div class="progress mb-3">
+            <div class="progress-bar" style="width: 50%">50%</div>
+        </div>
+
+        <div class="spinner-border"></div>
+        <span class="badge bg-success">Badge</span>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Home</li>
+                <li class="breadcrumb-item active">Demo</li>
+            </ol>
+        </nav>
+    </section>
+
+    <!-- INTERACTIVE -->
+    <section id="interactive" class="container py-5">
+        <h2>Interactive Components</h2>
+
+        <div class="accordion mb-3" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne">Accordion</button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">Expandable content</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-warning">Alert message</div>
+
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#demoModal">Open Modal</button>
+
+        <div class="modal fade" id="demoModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal</h5>
+                    </div>
+                    <div class="modal-body">Modal content</div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#collapseExample">Toggle</button>
+        <div id="collapseExample" class="collapse">Hidden content</div>
+
+        <div class="dropdown mt-3">
+            <button class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- BOOTSTRAP CLASS REFERENCE -->
+    <section class="container py-5">
+        <h2>Bootstrap Class Reference</h2>
+
+        <h4>Layout</h4>
+        <ul>
+            <li><code>container</code>: Centers content and sets max-width based on screen size</li>
+            <li><code>row</code>: Creates a horizontal flex container for columns</li>
+            <li><code>col-md-4</code>: 3 equal columns on medium screens and up</li>
+            <li><code>g-3</code>: Adds spacing (gutters) between columns</li>
+        </ul>
+
+        <h4>Spacing</h4>
+        <ul>
+            <li><code>py-5</code>: Padding top and bottom</li>
+            <li><code>mb-3</code>, <code>mb-4</code>: Margin bottom</li>
+            <li><code>mt-4</code>: Margin top</li>
+            <li><code>p-3</code>, <code>p-2</code>: Padding on all sides</li>
+        </ul>
+
+        <h4>Colors</h4>
+        <ul>
+            <li><code>bg-light</code>: Light background</li>
+            <li><code>bg-dark</code>: Dark background</li>
+            <li><code>bg-primary</code>, <code>bg-secondary</code>: Theme colors</li>
+            <li><code>text-white</code>: White text</li>
+        </ul>
+
+        <h4>Typography</h4>
+        <ul>
+            <li><code>display-1</code>, <code>display-4</code>: Large headline styles</li>
+            <li><code>lead</code>: Emphasized paragraph</li>
+            <li><code>fw-bold</code>: Bold font weight</li>
+            <li><code>fst-italic</code>: Italic text</li>
+            <li><code>lh-lg</code>: Larger line height</li>
+            <li><code>text-center</code>: Center text</li>
+            <li><code>text-decoration-underline</code>: Underlined text</li>
+        </ul>
+
+        <h4>Flexbox</h4>
+        <ul>
+            <li><code>d-flex</code>: Enables flexbox</li>
+            <li><code>justify-content-between</code>: Spaces items apart</li>
+        </ul>
+
+        <h4>Images and Utilities</h4>
+        <ul>
+            <li><code>img-fluid</code>: Responsive image</li>
+            <li><code>rounded</code>: Rounded corners</li>
+            <li><code>shadow</code>, <code>shadow-sm</code>: Adds shadow</li>
+            <li><code>border</code>: Adds border</li>
+        </ul>
+
+        <h4>Components</h4>
+        <ul>
+            <li><code>btn</code>: Button base</li>
+            <li><code>btn-primary</code>, <code>btn-secondary</code>: Button styles</li>
+            <li><code>card</code>, <code>card-body</code>: Card layout</li>
+            <li><code>nav</code>, <code>nav-tabs</code>: Navigation styles</li>
+            <li><code>pagination</code>: Pagination component</li>
+            <li><code>progress</code>, <code>progress-bar</code>: Progress bars</li>
+            <li><code>spinner-border</code>: Loading spinner</li>
+            <li><code>badge</code>: Small label indicator</li>
+            <li><code>breadcrumb</code>: Breadcrumb navigation</li>
+        </ul>
+
+        <h4>Interactive (JS-based)</h4>
+        <ul>
+            <li><code>data-bs-toggle="collapse"</code>: Toggles hidden content</li>
+            <li><code>data-bs-toggle="modal"</code>: Opens modal</li>
+            <li><code>data-bs-toggle="dropdown"</code>: Dropdown menu</li>
+            <li><code>accordion</code>: Expandable sections</li>
+            <li><code>alert</code>: Notification box</li>
+        </ul>
+
+        <h4>Body Attributes</h4>
+        <ul>
+            <li><code>data-bs-spy="scroll"</code>: Enables scrollspy</li>
+            <li><code>data-bs-target="#navbar"</code>: Links scrollspy to navbar</li>
+            <li><code>data-bs-offset="50"</code>: Offset for scroll tracking</li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
